@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe-app-bootstrap';
+
+  selectedTab:string='recipe';
+
+  onTabSelected(feature:string){
+    this.selectedTab=feature;
+  }
 }
