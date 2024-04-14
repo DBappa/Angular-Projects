@@ -12,4 +12,11 @@ export class ShoppingListComponent {
                new Ingredient("Rice","1kg")
               ];
 
+
+  onIngredientAdded(ingredient:Ingredient){
+    console.log("Inside OnIngredient Add");
+    this.ingredients.push(ingredient);
+
+  }
+
 }
